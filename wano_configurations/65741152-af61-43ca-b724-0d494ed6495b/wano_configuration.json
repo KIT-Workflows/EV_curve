@@ -1,0 +1,10 @@
+{
+    "commands": {},
+    "values": {
+        "relax pwo": "global://AdvancedForEach/*/QE_run/outputs/*.pwo"
+    },
+    "metadata": {
+        "name": "EV_analysis",
+        "folder": "EV_Analysis"
+    }
+}

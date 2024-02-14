@@ -1,0 +1,10 @@
+{
+    "commands": {},
+    "values": {
+        "input_file": "global://Relax_QE/outputs/relax.pwi"
+    },
+    "metadata": {
+        "name": "QE_run",
+        "folder": "QE_run"
+    }
+}

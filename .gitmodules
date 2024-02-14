@@ -1,0 +1,21 @@
+[submodule "wanos/Relax_QE"]
+	path = wanos/Relax_QE
+	url = git@github.com:KIT-Workflows/Relax_QE.git
+[submodule "wanos/Resize"]
+	path = wanos/Resize
+	url = git@github.com:KIT-Workflows/Resize.git
+[submodule "wanos/Structure_creation"]
+	path = wanos/Structure_creation
+	url = git@github.com:KIT-Workflows/Structure_creation.git
+[submodule "wanos/QE_run"]
+	path = wanos/QE_run
+	url = git@github.com:KIT-Workflows/QE_run.git
+[submodule "wanos/CalculateEnergy"]
+	path = wanos/CalculateEnergy
+	url = git@github.com:KIT-Workflows/CalculateEnergy.git
+[submodule "wanos/EV_Analysis"]
+	path = wanos/EV_Analysis
+	url = git@github.com:KIT-Workflows/EV_Analysis.git
+[submodule "wanos/FileInput"]
+	path = wanos/FileInput
+	url = git@github.com:KIT-Workflows/FileInput.git

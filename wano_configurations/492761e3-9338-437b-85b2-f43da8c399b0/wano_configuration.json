@@ -1,0 +1,10 @@
+{
+    "commands": {},
+    "values": {
+        "Structure file": "global://Structure_creation/outputs/structure.yml"
+    },
+    "metadata": {
+        "name": "Relax_QE",
+        "folder": "Relax_QE"
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "commands": {},
+    "values": {
+        "Structure file": "global://Structure_creation/outputs/structure.yml",
+        "Structure strain": "global://AdvancedForEach/${i_ITER}/Resize/outputs/structure_strain.traj"
+    },
+    "metadata": {
+        "name": "CalculateEnergy",
+        "folder": "CalculateEnergy"
+    }
+}

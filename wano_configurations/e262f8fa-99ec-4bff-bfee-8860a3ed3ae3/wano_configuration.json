@@ -1,0 +1,10 @@
+{
+    "commands": {},
+    "values": {
+        "input_file": "global://AdvancedForEach/${i_ITER}/CalculateEnergy/outputs/strain.pwi"
+    },
+    "metadata": {
+        "name": "QE_run",
+        "folder": "QE_run"
+    }
+}

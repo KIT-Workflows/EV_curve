@@ -1,0 +1,11 @@
+{
+    "commands": {},
+    "values": {
+        "relax pwo": "global://QE_run/outputs/*.pwo",
+        "Strain value": "import_from:${i}"
+    },
+    "metadata": {
+        "name": "Resize",
+        "folder": "Resize"
+    }
+}

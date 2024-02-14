@@ -1,0 +1,16 @@
+{
+    "workflow_environment":"SimStack",
+    "title": "EV_curve",
+    "description": "This workflow for structural optimization and energy-volume curve calculation for elements using the Quantum Espresso package, a material simulation tool based on density functional theory (DFT).e",
+    "authors": [
+        "J. Schaarschmidt",
+        "A. Buldin"
+    ],
+    "version": "0.0.1",
+    "logo": "EV_curve.png",
+    "keywords": [
+        "SimStack",
+        "WaNo",
+        "EV_curve"
+    ]
+}
