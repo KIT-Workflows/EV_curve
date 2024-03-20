@@ -4,7 +4,7 @@
         "Structure file": "global://Structure_creation/outputs/structure.yml"
     },
     "metadata": {
-        "name": "Relax_QE",
-        "folder": "Relax_QE"
+        "name": "QE_jobs",
+        "folder": "QE_jobs"
     }
 }

@@ -2,10 +2,12 @@
     "commands": {},
     "values": {
         "Structure file": "global://Structure_creation/outputs/structure.yml",
+        "Type of job": "Calculation energy",
+        "If Calculation energy": true,
         "Structure strain": "global://AdvancedForEach/${i_ITER}/Resize/outputs/structure_strain.traj"
     },
     "metadata": {
-        "name": "CalculateEnergy",
-        "folder": "CalculateEnergy"
+        "name": "QE_jobs",
+        "folder": "QE_jobs"
     }
 }

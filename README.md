@@ -7,61 +7,45 @@
 ## Description
 This suite comprises seven Python scripts designed to automate the process of crystal structure analysis using Quantum Espresso. The scripts facilitate the relaxation of crystal structures, application of strain, calculation of energy and volume, and finally, visualization of energy-volume relationships in a graph.
 
-### 1. FileInput for Pseudo-Potential files
-- Input: `fname` - The name for the file.
-- Input: `input_file` - The actual file to be used as input.
-- Output: The utilized file for input.
+### `QE_jobs.py` - Unified Quantum ESPRESSO Process:
+- Handles the creation of Quantum ESPRESSO input files, structure relaxation (`relax.pwi`), output file preparation, and execution of relaxation and energy calculations.
+- Inputs: YAML configuration file specifying the job type (`relaxation` or `energy calculation`), element, lattice parameter.
+- Outputs: Quantum ESPRESSO input (`*.pwi`) and output (`*.pwo`) files, copied and prepared YAML file for further processing.
 
-### 2. `relax_qe.py` - Structure Relaxation:
-- Creates a Quantum ESPRESSO input file for crystal structure relaxation (`relax.pwi`).
-- Inputs: Element, lattice parameter, cubic flag, crystal type, k-points grid.
-- Outputs: Quantum ESPRESSO input file (`relax.pwi`).
+### `resize.py` - Strain Application and Optimized Structure Creation:
+- Reads the optimized structure from the QE output file, applies specified strain, and prepares the structure for subsequent calculations.
+- Inputs: Strain value, trajectory file of the optimized structure.
+- Outputs: File of the strained structure, YAML file detailing the output (`output_dict.yml`).
 
-### 3. `resize.py` - Strain Application and Optimized Structure Creation:
-- Reads the last structure from a Quantum Espresso output file (`relax.pwo`) and writes it as an ASE atoms object to a trajectory file.
-- Applies specified strain to the relaxed crystal structure.
-- Inputs: YAML file with strain value, trajectory file of the optimized structure.
-- Outputs: Strained structure file, YAML file with output details (`output_dict.yml`).
-
-### 4. `structure_creation.py` - YAML File Preparation:
-- Copies `rendered_wano.yml` to `structure.yml` for further processing.
-- Inputs/Outputs: Copies and renames a YAML file.
-
-### 5. `qe_run.py` - Quantum ESPRESSO Calculation Execution:
-- Executes a Quantum ESPRESSO calculation using specified input and output files.
-- Inputs: Input file name from YAML (`rendered_wano.yml`).
-- Outputs: Quantum ESPRESSO output file (`*.pwo`).
-
-### 6. `calculate_energy.py` - Energy Calculation Input Preparation:
-- Prepares input files for energy calculation in Quantum Espresso.
+### `calculate_energy.py` - Energy Calculation Input Preparation:
+- Prepares input files for energy calculations in Quantum Espresso, following the application of strain.
 - Inputs: Element, file pattern, output filename, crystal type, k-points grid.
-- Outputs: PWscf input file (`strain.pwi`).
+- Outputs: PWscf input file for energy calculations (`strain.pwi`).
 
-### 7. `EV_analysis.py` - Energy-Volume Analysis and Plotting:
-- Reads energy and volume data from Quantum Espresso output files and generates a plot.
-- Inputs: Pattern for data files, output graph file name.
-- Outputs: Graph image (`energy_volume_graph.png`), energy-volume data file, error log file.
+### `EV_analysis.py` - Energy-Volume Relationship Analysis and Plotting:
+- Analyzes energy and volume data derived from QE output files, generating a comprehensive plot to illustrate the relationship.
+- Inputs: Data file pattern, output filename for the generated graph.
+- Outputs: Graphical visualization (`energy_volume_graph.png`), data file containing energy-volume points, and an error log file.
 
 ## Parameters
-- Element and lattice parameters for the crystal structure.
-- Number of MPI processes for Quantum Espresso calculations.
-- Strain values and file paths for input/output files.
+Parameters include but are not limited to:
+- Crystal structure details (element, lattice parameters),
+- Computational details (number of MPI processes),
+- Strain values,
+- File paths required for input and output.
 
 ## Functions
-The suite provides functions for:
-- Creating Quantum Espresso input files for relaxation and energy calculation.
-- Optimizing crystal structures and applying strain.
-- Executing Quantum Espresso calculations.
-- Preparing energy calculation inputs.
-- Analyzing and plotting energy vs. volume data.
+The `EV Curve` workflow facilitates:
+- Preparation and execution of Quantum Espresso jobs for relaxation and energy calculation.
+- Optimization of crystal structures with strain application.
+- Graphical representation of energy vs. volume relationships for analyzed structures.
 
 ## Output
-The suite generates various output files, including:
-- `relax.pwi`: Quantum Espresso input file for relaxation.
-- `optimized_structure.traj`: Contains the optimized crystal structure.
-- `output_dict.yml`: Contains output details from strain application.
-- `*.pwo`: Quantum Espresso output files.
-- `strain.pwi`: Quantum Espresso input file for energy calculation.
-- `energy_volume_data.txt`: Contains energy and volume data.
-- `error_data.txt`: Logs errors encountered during calculations.
-- `energy_volume_graph.png`: Visual representation of the energy-volume relationship.
+Generated outputs encompass:
+- Quantum Espresso input (`*.pwi`) and output (`*.pwo`) files for various computational operations.
+- `optimized_structure.traj`: Featuring the finalized, optimized crystal structure.
+- `output_dict.yml`: Detailing the outputs from strain applications.
+- `strain.pwi`: Quantum Espresso input file tailored for energy calculations.
+- `energy_volume_data.txt`: Compiling the collated energy and volume data.
+- `error_data.txt`: Documenting encountered calculation errors.
+- `energy_volume_graph.png`: A graph depicting the energy-volume relationship.

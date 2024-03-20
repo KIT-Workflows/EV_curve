@@ -1,18 +1,15 @@
 <root wfxml_version="2.0">
-  <WaNo type="FileInput" uuid="3ae84ccc-3b1f-44b3-8ed0-d9e85fe5b936" id="0" name="FileInput"/>
-  <WaNo type="Structure_creation" uuid="fc91b33f-6b99-4830-8ca4-ad9bb0a41c21" id="1" name="Structure_creation"/>
-  <WaNo type="Relax_QE" uuid="492761e3-9338-437b-85b2-f43da8c399b0" id="2" name="Relax_QE"/>
-  <WaNo type="QE_run" uuid="d7bd50ad-fa87-4066-8e68-ef4fe4a2e537" id="3" name="QE_run"/>
+  <WaNo type="Structure_creation" uuid="ef000dd1-7711-4898-8df1-f9c3d3dbebae" id="0" name="Structure_creation"/>
+  <WaNo type="QE_jobs" uuid="4f672280-97d3-4a1f-aa21-68de2e9b3226" id="1" name="QE_jobs"/>
   <WFControl name="AdvancedForEach" type="AdvancedFor" is_file_iterator="False">
     <WFControl name="SubWF" type="SubWorkflow">
-      <WaNo type="Resize" uuid="0cd6ac0f-1e11-455f-8c9b-8064842f179b" id="0" name="Resize"/>
-      <WaNo type="CalculateEnergy" uuid="2b7288d1-b46e-49a4-8ed2-f3f8c72e5549" id="1" name="CalculateEnergy"/>
-      <WaNo type="QE_run" uuid="e262f8fa-99ec-4bff-bfee-8860a3ed3ae3" id="2" name="QE_run"/>
+      <WaNo type="Resize" uuid="33a77423-f8a0-447e-ac46-b5fa6fddb324" id="0" name="Resize"/>
+      <WaNo type="QE_jobs" uuid="5dc832ba-7746-4ef7-b4ef-a76248c1a49b" id="1" name="QE_jobs"/>
     </WFControl>
     <FileList>
       <File>list(np.linspace(0.9,1.1,5))</File>
     </FileList>
     <IterName>i</IterName>
   </WFControl>
-  <WaNo type="EV_Analysis" uuid="65741152-af61-43ca-b724-0d494ed6495b" id="5" name="EV_Analysis"/>
+  <WaNo type="EV_Analysis" uuid="d08e49ac-fe52-43bf-a3dd-c57d9da7097f" id="3" name="EV_Analysis"/>
 </root>

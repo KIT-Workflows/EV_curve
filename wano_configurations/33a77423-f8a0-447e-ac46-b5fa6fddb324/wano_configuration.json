@@ -1,7 +1,7 @@
 {
     "commands": {},
     "values": {
-        "relax pwo": "global://QE_run/outputs/*.pwo",
+        "output pwo file from QE_jobs Relaxation": "global://QE_jobs/outputs/output.pwo",
         "Strain value": "import_from:${i}"
     },
     "metadata": {
