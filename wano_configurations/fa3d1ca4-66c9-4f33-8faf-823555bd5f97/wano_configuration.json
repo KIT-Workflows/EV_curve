@@ -1,7 +1,7 @@
 {
     "commands": {},
     "values": {
-        "Structure file": "global://Structure_creation/outputs/structure.yml"
+        "Structure file": "global://Structure_creation/outputs/structure.xyz"
     },
     "metadata": {
         "name": "QE_jobs",

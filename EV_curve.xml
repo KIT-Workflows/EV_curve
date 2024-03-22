@@ -1,15 +1,15 @@
 <root wfxml_version="2.0">
-  <WaNo type="Structure_creation" uuid="ef000dd1-7711-4898-8df1-f9c3d3dbebae" id="0" name="Structure_creation"/>
-  <WaNo type="QE_jobs" uuid="4f672280-97d3-4a1f-aa21-68de2e9b3226" id="1" name="QE_jobs"/>
+  <WaNo type="Structure_creation" uuid="57cf4eac-c293-4839-a2fc-e2ab89bdca9a" id="0" name="Structure_creation"/>
+  <WaNo type="QE_jobs" uuid="fa3d1ca4-66c9-4f33-8faf-823555bd5f97" id="1" name="QE_jobs"/>
   <WFControl name="AdvancedForEach" type="AdvancedFor" is_file_iterator="False">
     <WFControl name="SubWF" type="SubWorkflow">
-      <WaNo type="Resize" uuid="33a77423-f8a0-447e-ac46-b5fa6fddb324" id="0" name="Resize"/>
-      <WaNo type="QE_jobs" uuid="5dc832ba-7746-4ef7-b4ef-a76248c1a49b" id="1" name="QE_jobs"/>
+      <WaNo type="Resize" uuid="5e712875-10fe-494d-a67a-e6b1a88265bc" id="0" name="Resize"/>
+      <WaNo type="QE_jobs" uuid="859a9c47-23e9-45da-a0a0-88eca95df23c" id="1" name="QE_jobs"/>
     </WFControl>
     <FileList>
       <File>list(np.linspace(0.9,1.1,5))</File>
     </FileList>
     <IterName>i</IterName>
   </WFControl>
-  <WaNo type="EV_Analysis" uuid="d08e49ac-fe52-43bf-a3dd-c57d9da7097f" id="3" name="EV_Analysis"/>
+  <WaNo type="EV_Analysis" uuid="c5d7817e-9428-42d9-8fb4-8e7ad6070c3c" id="3" name="EV_Analysis"/>
 </root>
