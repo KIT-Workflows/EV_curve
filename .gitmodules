@@ -1,12 +1,12 @@
 [submodule "wanos/Resize"]
 	path = wanos/Resize
-	url = https://github.com/KIT-Workflows/Resize.git
+    url = git@github.com:KIT-Workflows/Resize.git
 [submodule "wanos/Structure_creation"]
 	path = wanos/Structure_creation
-	url = https://github.com/KIT-Workflows/Structure_creation.git
+	url = git@github.com:KIT-Workflows/Structure_creation.git
 [submodule "wanos/EV_Analysis"]
 	path = wanos/EV_Analysis
-	url = https://github.com/KIT-Workflows/EV_Analysis.git
+	url = git@github.com:KIT-Workflows/EV_Analysis.git
 [submodule "wanos/QE_jobs"]
 	path = wanos/QE_jobs
-	url = https://github.com/KIT-Workflows/QE_jobs.git
+	url = git@github.com:KIT-Workflows/QE_jobs.git
