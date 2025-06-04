@@ -1,7 +1,9 @@
 {
     "commands": {},
     "values": {
-        "Structure file": "global://Structure_creation/outputs/structure.xyz"
+        "Structure file": "global://Structure_creation/outputs/structure.xyz",
+        "Your path to the pseudopotential files": true,
+        "custom_pseudopotentials_path": "import_from:/home/sd/workflow/EV_curve/wanos/QE_jobs"
     },
     "metadata": {
         "name": "QE_jobs",

@@ -3,7 +3,9 @@
     "values": {
         "Structure file": "global://Structure_creation/outputs/structure.xyz",
         "Type of job": "Calculation energy",
-        "Structure strain": "global://AdvancedForEach/${i_ITER}/Resize/outputs/structure_strain.traj"
+        "Structure strain": "global://AdvancedForEach/${i_ITER}/Resize/outputs/structure_strain.traj",
+        "Your path to the pseudopotential files": true,
+        "custom_pseudopotentials_path": "import_from:/home/sd/workflow/EV_curve/wanos/QE_jobs"
     },
     "metadata": {
         "name": "QE_jobs",
