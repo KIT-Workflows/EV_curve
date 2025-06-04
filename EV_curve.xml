@@ -7,7 +7,7 @@
       <WaNo type="QE_jobs" uuid="859a9c47-23e9-45da-a0a0-88eca95df23c" id="1" name="QE_jobs"/>
     </WFControl>
     <FileList>
-      <File>list(np.linspace(0.9,1.1,5))</File>
+      <File>list(__import__('numpy').linspace(0.9,1.1,5))</File>
     </FileList>
     <IterName>i</IterName>
   </WFControl>
